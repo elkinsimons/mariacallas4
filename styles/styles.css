@@ -5,54 +5,55 @@
   box-sizing: border-box;
 }
 
-/* 1) CSS GLOBAL: PROPIEDADES CONSTANTES en body (header, main, footer) */
-/* {
-font: ;
-color: ;
-opacity: ;
-align: ;
-background-color: ;
-}
+/*HEADER*/
+/* img {...}
 
-h1 {...} h2 {...} h3 {...} h4 {...} h5 {...} h6 {...}
+a {...}
+
+*/
+/*MAIN*/
+/* h1 {...}
+
+h2 {...}
+
+h3 {...}
 
 p {...}
 
-a {...}
 */
-/*HEADER*/
-/*MAIN*/
 /*FOOTER*/
+/* 
+form label {...}
+*/
 /* MEDIA QUERIES: Mobile First */
-/* @media only screen and (max-width:600px) {
-
-.grid-container {
-display: grid; 
-grid-template-area: ;
-grid-template-rows: ;
-grid-template-columns: ;
-gap: ; }
-
-.grid-item {
-grid-area: ; }
-
-.flexbox-container {
-display: flex;
-flex-direction: ;
-flex-wrap: ;
-gap: ; }
-
-.flexbox-item {
-flex-grow: ;
-flex-shrink: ;
-flex-basis: ;
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: 10 80 10;
+    grid-template-columns: 1;
+    gap: 1px;
+  }
+}
+/*
 h1 {...}
 p {...}
 a {...}
 img {...} }
 }
 */
-/* MEDIA QUERIES: Tablet */
-/* MEDIA QUERIES: Desktop */
+/* MEDIA QUERIES: Tablet 
+
+@media only screen and (min-width: 600px) {
+@include nombredelmixin
+
+}
+
+
+MEDIA QUERIES: Desktop 
+
+ @media only screen and (min-width: 1200px) {
+ @include nombredelmixin
+
+ */
 
 /*# sourceMappingURL=styles.css.map */
