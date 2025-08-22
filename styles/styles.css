@@ -1,0 +1,58 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1) CSS GLOBAL: PROPIEDADES CONSTANTES en body (header, main, footer) */
+/* {
+font: ;
+color: ;
+opacity: ;
+align: ;
+background-color: ;
+}
+
+h1 {...} h2 {...} h3 {...} h4 {...} h5 {...} h6 {...}
+
+p {...}
+
+a {...}
+*/
+/*HEADER*/
+/*MAIN*/
+/*FOOTER*/
+/* MEDIA QUERIES: Mobile First */
+/* @media only screen and (max-width:600px) {
+
+.grid-container {
+display: grid; 
+grid-template-area: ;
+grid-template-rows: ;
+grid-template-columns: ;
+gap: ; }
+
+.grid-item {
+grid-area: ; }
+
+.flexbox-container {
+display: flex;
+flex-direction: ;
+flex-wrap: ;
+gap: ; }
+
+.flexbox-item {
+flex-grow: ;
+flex-shrink: ;
+flex-basis: ;
+h1 {...}
+p {...}
+a {...}
+img {...} }
+}
+*/
+/* MEDIA QUERIES: Tablet */
+/* MEDIA QUERIES: Desktop */
+
+/*# sourceMappingURL=styles.css.map */

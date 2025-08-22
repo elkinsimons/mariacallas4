@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bienvenidos a la página tributo a la cantante soprano lírica María Callas.">
+        <meta name="keyword"  content="Inicio, novedades, bienvenida">
+        <title>Página Tributo a María Callas * NOVEDADES</title>
+        <!-- ENLACE AL ARCHIVO CSS -->
+        <link rel="stylesheet" href="./styles/styles.css">
+        <!-- BOOTSTRAP POR CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- CONTENIDO ESTRUCTURADO CON CSS GRIDS-->
+         <div class="grid-container">
+            <div class="grid-header">
+                <!-- HEADER ESTRUCTURADO CON FLEXBOX-->
+                 <div class="flexbox-container">
+                    <div>
+                        <img src="./assets/mcimgportada.jpg" alt="Retrato de Maria Callas sonriendo por la ventana" class="flexbox-item1"> <!--img al lado del menú de navegación.-->
+                    </div>
+                    <div class="dropdown" class="flexbox-item2"> <!--Menú de navegación.-->
+                        <span>MENU</span>
+                        <div class="dropdown-content">
+                            <a href="index.html">Inicio ♫</a>
+                            <a href="./pages/biografia.html">Biografía</a>
+                            <a href="./pages/videoteca.html">Videoteca</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-main">
+                <!--Mensaje de Bienvenida y novedades estilizado con BOOTSRAPS -->
+                <div>
+                    <h1  class="blockquote" class="encabezado-uno">Página tributo a la cantante María Callas.</h1>
+                    <p>Sitio web dedicado a compartir novedades, música e información relacionada con la soprano lírica María Callas.</p>
+                    <p>Muchas gracias por tu visita.</p>
+                </div>
+                <div>
+                    <h2 class="encabezado-dos">.:: Novedades ::.</h2> 
+                    <h3 class="encabezado-tres">Noviembre/2024: reseña sobre la película "María"(2024).</h3>
+                    <p> Protagonizada por Angelina Jolie: interpreta a María Callas en los últimos siete días de su vida, en un filme dirigido por Pablo Larraín y escrito por Steven Knight  . Su actuación ha sido ampliamente elogiada. </p>
+                    <h3>Marzo/2024: repertorio.</h3>
+                    <p>Conoce el <a class="listas-enlances" href="https://es.wikipedia.org/wiki/Maria_Callas#Repertorio" target="_blank">♫ REPERTORIO ♫</a> de María Callas.</p>
+                </div>
+            </div>
+            <div class="grid-footer">
+                <!--FOOTER ESTILIZADO CON BOX MODEL-->
+                <p>© 2025 Tributo a María Callas. Todos los derechos reservados. Este sitio no oficial rinde homenaje a la vida y legado de María Callas.</p>
+                <!--Input para suscribirse a la newsletter-->
+                <form action="submit" value="enviar" method="post"> 
+                    <label for="newsletter">¡Suscríbete a nuestra Newsletter!</label>
+                    <input type="email"></input>
+                </form>
+                <!--Enlaces externos hacia redes socials * Grilla con dos colunmas y una fila: 
+                red enlancere enlace  -->
+                <ul class="listas-enlances">
+                    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/?locale=es_LA" target="_blank">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Script de Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    </body>
+</html>
