@@ -44,21 +44,28 @@
 .grid-main h1{
     color: $color-secundario;
     text-align: center;
+    font-size: large
 }
 
 .grid-main h2{
-    color: $color-secundario;
+    color:pink;
     text-align: center;
+    font-size: medium;
 }
 
 .grid-main h3{
     color: $color-secundario;
     text-align: start;
+    font-size: small;
 }
 
 p{
     color: $color-secundario;
     text-align: justify;
+    a{
+        text-decoration: none;
+        color:pink;
+    }
 }
 
 .grid-container{
@@ -67,7 +74,24 @@ p{
 
 
 /*FOOTER*/
+form label{
+    color: $color-secundario;
+}
 
+ul{
+   list-style: none;
+   padding:0;
+   margin:0;
+   display: flex;
+   gap: 1rem;
+   justify-content: flex-end;
+
+   li a{
+    text-decoration: none;
+    color: pink;
+    font-weight: bold;
+    }
+}
 
 
 /* MEDIA QUERIES: Mobile First */

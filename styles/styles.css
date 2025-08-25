@@ -37,21 +37,28 @@
 .grid-main h1 {
   color: white;
   text-align: center;
+  font-size: large;
 }
 
 .grid-main h2 {
-  color: white;
+  color: pink;
   text-align: center;
+  font-size: medium;
 }
 
 .grid-main h3 {
   color: white;
   text-align: start;
+  font-size: small;
 }
 
 p {
   color: white;
   text-align: justify;
+}
+p a {
+  text-decoration: none;
+  color: pink;
 }
 
 .grid-container {
@@ -59,6 +66,24 @@ p {
 }
 
 /*FOOTER*/
+form label {
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+ul li a {
+  text-decoration: none;
+  color: pink;
+  font-weight: bold;
+}
+
 /* MEDIA QUERIES: Mobile First */
 @media only screen and (max-width: 600px) {
   .grid-container {
