@@ -13,11 +13,12 @@
 
 //Mixin Flexbox
 
-@mixin flexbox-container ($direction, $wrap, $gap){
+@mixin flexbox-container ($direction, $wrap, $gap, $aling){
     display: flex;
     flex-direction: $direction ;
     flex-wrap: $wrap;
     gap: $gap;
+    align-items: $aling;
 }
 
 @mixin flexbox-item ($grow, $shrink, $basis, $align){
@@ -25,4 +26,15 @@ flex-grow: $grow;
 flex-shrink: $shrink ;
 flex-basis: $basis;
 align-items: $align;
+}
+
+//Mixin Box Model
+
+@mixin box-model(/*$margin, $border, $padding, $width,*/ $height){
+    /* margin: $margin;
+    border: $border;
+    padding: $padding;
+    width: $width; */ 
+    height: $height;
+    // background-color:
 }

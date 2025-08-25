@@ -13,13 +13,13 @@
 /*HEADER*/
 
 .flexbox-container{
-        @include flexbox-container (column, wrap, 2px);
-        align-items: center;
+        @include flexbox-container (column, wrap, 2px, center);
 
         img {
             flex: 1;
             height: auto;
             object-fit: contain;
+            @include box-model(10vh)
          }
 
         span{
@@ -72,26 +72,41 @@ p{
     background-color: $color-principal;
 }
 
+.flexbox-video p{
+    text-align: center;
+}
 
 /*FOOTER*/
-form label{
-    color: $color-secundario;
-}
 
-ul{
-   list-style: none;
-   padding:0;
-   margin:0;
-   display: flex;
-   gap: 1rem;
-   justify-content: flex-end;
+.grid-footer{
+    p{
+        text-align: right;
+    }
 
-   li a{
-    text-decoration: none;
-    color: pink;
-    font-weight: bold;
+    form {
+        display: flex;
+        justify-content: flex-end;
+        
+        label{
+            color: $color-secundario;
+            }
+    }
+    
+    ul{
+        list-style: none;
+        padding:0;
+        margin:0;
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-end;
+        li a{
+            text-decoration: none;
+            color: pink;
+            font-weight: bold;
+            }
     }
 }
+
 
 
 /* MEDIA QUERIES: Mobile First */
@@ -100,28 +115,33 @@ ul{
     .grid-container{
         @include grid-container (grid, 10 80 10, 1, 1px);
     }
-            
+
+    .flexbox-videoteca{
+        @include flexbox-container (column, wrap, 1px, center);
 
     }
-    .flexbox-item{
-        @include flexbox-item (1, 0, 0, center)
-        
-    }
+}
+   
 
 /* MEDIA QUERIES: Tablet */
 
 @media only screen and (min-width: 600px) {
- .grid-container{
+    .grid-container{
         @include grid-container (grid, 15 75 10, 1, 1px)
-    }
-
+        }
+    
+    .flexbox-videoteca{
+        @include flexbox-container (row, wrap, 1px, center);
+        }
 }
 
 /* MEDIA QUERIES: Desktop */
 
  @media only screen and (min-width: 1200px) {
- .grid-container{
+    .grid-container{
         @include grid-container (grid, 20 70 10, 1, 1px)
-    }
-
+        }
+    .flexbox-videoteca{
+        @include flexbox-container (row, wrap, 1px, center);
+        }
 }

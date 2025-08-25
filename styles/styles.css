@@ -18,6 +18,11 @@
   flex: 1;
   height: auto;
   object-fit: contain;
+  /* margin: $margin;
+  border: $border;
+  padding: $padding;
+  width: $width; */
+  height: 10vh;
 }
 .flexbox-container span {
   display: block;
@@ -65,12 +70,22 @@ p a {
   background-color: black;
 }
 
-/*FOOTER*/
-form label {
-  color: white;
+.flexbox-video p {
+  text-align: center;
 }
 
-ul {
+/*FOOTER*/
+.grid-footer p {
+  text-align: right;
+}
+.grid-footer form {
+  display: flex;
+  justify-content: flex-end;
+}
+.grid-footer form label {
+  color: white;
+}
+.grid-footer ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -78,7 +93,7 @@ ul {
   gap: 1rem;
   justify-content: flex-end;
 }
-ul li a {
+.grid-footer ul li a {
   text-decoration: none;
   color: pink;
   font-weight: bold;
@@ -92,14 +107,14 @@ ul li a {
     grid-template-columns: 1;
     gap: 1px;
   }
+  .flexbox-videoteca {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1px;
+    align-items: center;
+  }
 }
-.flexbox-item {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: 0;
-  align-items: center;
-}
-
 /* MEDIA QUERIES: Tablet */
 @media only screen and (min-width: 600px) {
   .grid-container {
@@ -107,6 +122,13 @@ ul li a {
     grid-template-rows: 15 75 10;
     grid-template-columns: 1;
     gap: 1px;
+  }
+  .flexbox-videoteca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1px;
+    align-items: center;
   }
 }
 /* MEDIA QUERIES: Desktop */
@@ -116,6 +138,13 @@ ul li a {
     grid-template-rows: 20 70 10;
     grid-template-columns: 1;
     gap: 1px;
+  }
+  .flexbox-videoteca {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1px;
+    align-items: center;
   }
 }
 
