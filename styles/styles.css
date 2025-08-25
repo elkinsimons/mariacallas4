@@ -70,6 +70,25 @@ p a {
   background-color: black;
 }
 
+.flexbox-galeria {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  align-items: center;
+}
+.flexbox-galeria .item-galeria {
+  justify-content: space-between;
+  width: 1fr, 1fr, 1fr;
+  aspect-ratio: 1/1;
+}
+.flexbox-galeria img {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .flexbox-video p {
   text-align: center;
 }

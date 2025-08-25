@@ -72,6 +72,23 @@ p{
     background-color: $color-principal;
 }
 
+.flexbox-galeria{
+    @include flexbox-container (row, nowrap, 20px, center);
+      
+    .item-galeria{
+        justify-content: space-between;
+          width: 1fr, 1fr, 1fr;
+          aspect-ratio: 1 / 1;       
+    }
+
+    img{
+        align-self: center;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+    }
+
 .flexbox-video p{
     text-align: center;
 }
@@ -144,4 +161,4 @@ p{
     .flexbox-videoteca{
         @include flexbox-container (row, wrap, 1px, center);
         }
-}
+    }

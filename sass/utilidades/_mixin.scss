@@ -13,12 +13,12 @@
 
 //Mixin Flexbox
 
-@mixin flexbox-container ($direction, $wrap, $gap, $aling){
+@mixin flexbox-container ($direction, $wrap, $gap, $align){
     display: flex;
     flex-direction: $direction ;
     flex-wrap: $wrap;
     gap: $gap;
-    align-items: $aling;
+    align-items: $align;
 }
 
 @mixin flexbox-item ($grow, $shrink, $basis, $align){
