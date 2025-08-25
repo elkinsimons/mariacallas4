@@ -5,68 +5,100 @@
   box-sizing: border-box;
 }
 
-//IMPORT
+/* Import */
 @import "utilidades/listas";
 @import "utilidades/variables";
 @import "utilidades/mixin";
 
-
 /*HEADER*/
 
-/* img {...}
+.flexbox-container{
+    display: flex;
+    align-items: center;
+}
 
-a {...}
+.flexbox-item2{
+text-decoration: none;
+}
 
-*/
 
 /*MAIN*/
 
-/* h1 {...}
+span{
+    color:$color-secundario;
+}
 
-h2 {...}
+.dropdown-content a{
+    text-decoration: none;
+    color: pink;
+    text-align: start;
+}
 
-h3 {...}
+.flexbox-item2{
+    text-decoration: none;
 
-p {...}
+}
+.grid-main h1{
+    color: $color-secundario;
+    text-align: center;
+}
 
-*/
+.grid-main h2{
+    color: $color-secundario;
+    text-align: center;
+}
+
+.grid-main h3{
+    color: $color-secundario;
+    text-align: start;
+}
+
+p{
+    color: $color-secundario;
+    text-align: justify;
+}
+
+.grid-container{
+    background-color: $color-principal;
+}
+
 
 /*FOOTER*/
 
-/* 
-form label {...}
-*/
+
 
 /* MEDIA QUERIES: Mobile First */
 
 @media only screen and (max-width:600px) {
-
     .grid-container{
-        @include grid-container (grid, 10 80 10, 1, 1px)
+        @include grid-container (grid, 10 80 10, 1, 1px);
+    }
+    .flexbox-container{
+        @include flexbox-container (column, wrap, 2px)
+         
+
+    }
+    .flexbox-item{
+        @include flexbox-item (1, auto, auto, center)
+        
     }
 
 }
 
-/*
-h1 {...}
-p {...}
-a {...}
-img {...} }
-}
-*/
-
-
-/* MEDIA QUERIES: Tablet 
+/* MEDIA QUERIES: Tablet */
 
 @media only screen and (min-width: 600px) {
-@include nombredelmixin
+ .grid-container{
+        @include grid-container (grid, 15 75 10, 1, 1px)
+    }
 
 }
 
-
-MEDIA QUERIES: Desktop 
+/* MEDIA QUERIES: Desktop */
 
  @media only screen and (min-width: 1200px) {
- @include nombredelmixin
+ .grid-container{
+        @include grid-container (grid, 20 70 10, 1, 1px)
+    }
 
- */
+}

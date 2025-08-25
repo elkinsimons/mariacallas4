@@ -5,26 +5,57 @@
   box-sizing: border-box;
 }
 
+/* Import */
 /*HEADER*/
-/* img {...}
+.flexbox-container {
+  display: flex;
+  align-items: center;
+}
 
-a {...}
+.flexbox-item2 {
+  text-decoration: none;
+}
 
-*/
 /*MAIN*/
-/* h1 {...}
+span {
+  color: white;
+}
 
-h2 {...}
+.dropdown-content a {
+  text-decoration: none;
+  color: pink;
+  text-align: start;
+}
 
-h3 {...}
+.flexbox-item2 {
+  text-decoration: none;
+}
 
-p {...}
+.grid-main h1 {
+  color: white;
+  text-align: center;
+}
 
-*/
+.grid-main h2 {
+  color: white;
+  text-align: center;
+}
+
+.grid-main h3 {
+  color: white;
+  text-align: start;
+}
+
+p {
+  color: white;
+  text-align: justify;
+}
+
+.grid-container {
+  background-color: black;
+}
+
 /*FOOTER*/
-/* 
-form label {...}
-*/
 /* MEDIA QUERIES: Mobile First */
 @media only screen and (max-width: 600px) {
   .grid-container {
@@ -33,27 +64,36 @@ form label {...}
     grid-template-columns: 1;
     gap: 1px;
   }
+  .flexbox-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .flexbox-item {
+    flex-grow: 1;
+    flex-shrink: auto;
+    flex-basis: auto;
+    align-items: center;
+  }
 }
-/*
-h1 {...}
-p {...}
-a {...}
-img {...} }
-}
-*/
-/* MEDIA QUERIES: Tablet 
-
+/* MEDIA QUERIES: Tablet */
 @media only screen and (min-width: 600px) {
-@include nombredelmixin
-
+  .grid-container {
+    display: grid;
+    grid-template-rows: 15 75 10;
+    grid-template-columns: 1;
+    gap: 1px;
+  }
 }
-
-
-MEDIA QUERIES: Desktop 
-
- @media only screen and (min-width: 1200px) {
- @include nombredelmixin
-
- */
+/* MEDIA QUERIES: Desktop */
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-rows: 20 70 10;
+    grid-template-columns: 1;
+    gap: 1px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

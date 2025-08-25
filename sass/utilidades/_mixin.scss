@@ -20,8 +20,9 @@
     gap: $gap;
 }
 
-@mixin flexbox-item ($grow, $shrink, $basis){
+@mixin flexbox-item ($grow, $shrink, $basis, $align){
 flex-grow: $grow;
 flex-shrink: $shrink ;
 flex-basis: $basis;
+align-items: $align;
 }
