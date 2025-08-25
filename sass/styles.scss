@@ -19,7 +19,7 @@
             flex: 1;
             height: auto;
             object-fit: contain;
-            @include box-model(10vh)
+            @include box-model(20vh)
          }
 
         span{
@@ -133,12 +133,15 @@ p{
         @include grid-container (grid, 10 80 10, 1, 1px);
     }
 
+    .flexbox-galeria{
+    @include flexbox-container (column, nowrap, 20px, center);
+    }
+      
     .flexbox-videoteca{
         @include flexbox-container (column, wrap, 1px, center);
 
     }
 }
-   
 
 /* MEDIA QUERIES: Tablet */
 

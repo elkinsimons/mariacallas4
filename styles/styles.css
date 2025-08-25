@@ -22,7 +22,7 @@
   border: $border;
   padding: $padding;
   width: $width; */
-  height: 10vh;
+  height: 20vh;
 }
 .flexbox-container span {
   display: block;
@@ -125,6 +125,13 @@ p a {
     grid-template-rows: 10 80 10;
     grid-template-columns: 1;
     gap: 1px;
+  }
+  .flexbox-galeria {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
   }
   .flexbox-videoteca {
     display: flex;
