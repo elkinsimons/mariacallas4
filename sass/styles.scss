@@ -13,31 +13,34 @@
 /*HEADER*/
 
 .flexbox-container{
-    display: flex;
-    align-items: center;
-}
+        @include flexbox-container (column, wrap, 2px);
+        align-items: center;
 
-.flexbox-item2{
-text-decoration: none;
-}
+        img {
+            flex: 1;
+            height: auto;
+            object-fit: contain;
+         }
 
+        span{
+            display: block;
+            text-align: center;
+            color:$color-secundario;
+        }
+
+        .dropdown-content a{
+            text-decoration: none;
+            color: pink;
+            text-align: start;
+
+            .flexbox-item2{
+                text-decoration: none;
+                }
+        }
+}
 
 /*MAIN*/
 
-span{
-    color:$color-secundario;
-}
-
-.dropdown-content a{
-    text-decoration: none;
-    color: pink;
-    text-align: start;
-}
-
-.flexbox-item2{
-    text-decoration: none;
-
-}
 .grid-main h1{
     color: $color-secundario;
     text-align: center;
@@ -73,17 +76,13 @@ p{
     .grid-container{
         @include grid-container (grid, 10 80 10, 1, 1px);
     }
-    .flexbox-container{
-        @include flexbox-container (column, wrap, 2px)
-         
+            
 
     }
     .flexbox-item{
-        @include flexbox-item (1, auto, auto, center)
+        @include flexbox-item (1, 0, 0, center)
         
     }
-
-}
 
 /* MEDIA QUERIES: Tablet */
 
